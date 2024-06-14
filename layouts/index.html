@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="homepage-section-1 d-flex align-items-center justify-content-center gap-5">
+    <section class="d-flex flex-column">
+        <h1>{{ .Title }}</h1>
+        {{ .Params.lead | safeHTML }}
+        <a id="homepage-section-1-get-started-btn" class="btn btn-primary btn-cta rounded-pill btn-lg my-3 mt-5 mx-auto"
+                href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}guides/getting-started/"
+                role="button">Get started!</a>
+    </section>
+   <img src="/images/font_tester.png">
+</div>
+<section class="section section-md section-features">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-5">
+                <h2 class="h4">Documentation</h2>
+                <p>Where all our documentation is for coding on a computer!</p>
+            </div>
+            <div class="col-lg-5">
+                <h2 class="h4">Addon Guides/Documentation</h2>
+                <p>You can learn how to make addons via the documentation that we provide!</p>
+            </div>
+            <div class="col-lg-5">
+                <h2 class="h4">How to use ScrapComputers Tools for your addon's!</h2>
+                <p>We have tools that we made for our development! But you can use it for your own needs!</p>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

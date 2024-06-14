@@ -1,0 +1,46 @@
+// CSS for the Colorbar at the header
+.sticky-top .color-bar
+{
+    border-image: linear-gradient(to right, #8e93ee, #d8d9ed,) 90;
+    border-top: 4px solid;
+    box-sizing: border-box;
+}
+
+// Expand the header's spacing
+.navbar div
+{
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+}
+
+// Expand the width for the documentation and for blog posts
+.wrap[role="document"]:has(.content):has(.flex-xl-nowrap),
+.wrap[role="document"]:has(.content):has(article):not(:has(.card))
+{
+    max-width: none;
+}
+
+.homepage-section-1
+{
+    margin-top: 6rem;
+    padding-bottom: 5rem;
+}
+
+.homepage-section-1 #homepage-section-1-get-started-btn
+{
+    width: fit-content;
+}
+
+@media (max-width: 1900px)
+{
+    .homepage-section-1 img
+    {
+        display: none;
+    }
+
+    .homepage-section-1
+    {
+        text-align: center;
+    }
+}
