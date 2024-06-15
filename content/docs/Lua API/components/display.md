@@ -237,7 +237,9 @@ This optimizes the display but more at the extreme bound.
 {{< callout context="caution" title="Performance note!" icon="outline/alert-triangle" >}}
 This is only meant to be called when you're not planning to update the display for a long time. Use it when it's generally going to be static.
 {{< /callout >}}
+
 ---
+
 ### getDimensions
 
 ```lua
