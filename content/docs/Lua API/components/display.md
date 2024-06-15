@@ -54,7 +54,7 @@ Display.drawPixel( x, y, color )
 
 Draws a single pixel at the specified coordinates with the given color.
 
-Arguments:
+**Arguments:**
 - x [ **number** ] The x-coordinate of the pixel.
 - y [ **number** ] The y-coordinate of the pixel.
 - color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string?** ] The color of the pixel in hexadecimal format.
@@ -69,7 +69,7 @@ Display.drawFromTable( tbl )
 
 Draws shapes and text based on data provided in a table.
 
-Arguments:
+**Arguments:**
 - tbl [ **[PixelTable](#pixeltable)** ] A table containing drawing commands and parameters.
 
 ---
@@ -82,7 +82,7 @@ Display.clear( color )
 
 Clears the display with the specified color.
 
-Arguments:
+**Arguments:**
 - color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string?** ] The color to clear the display with, in hexadecimal format. (If nil, It will clear the screen with the default color)
 
 ---
@@ -95,7 +95,7 @@ Display.drawLine( x, y, x1, y1, color )
 
 Draw a line between two points with the specified color.
 
-Arguments:
+**Arguments:**
 - x [ **number** ] The x-coordinate of the starting point.
 - y [ **number** ] The y-coordinate of the starting point.
 - x1 [ **number** ] The x-coordinate of the ending point.
@@ -112,7 +112,7 @@ Display.drawCircle( x, y, radius, color )
 
 Draws a circle with the specified center coordinates, radius, and color.
 
-Arguments:
+**Arguments:**
 - x [ **number** ] The x-coordinate of the center of the circle.
 - y [ **number** ] The y-coordinate of the center of the circle.
 - radius [ **number** ] The radius of the circle.
@@ -128,7 +128,7 @@ Display.drawFilledCircle( x, y, radius, color )
 
 Draws a filled circle with the specified center coordinates, radius, and color.
 
-Arguments:
+**Arguments:**
 - x [ **number** ] The x-coordinate of the center of the circle.
 - y [ **number** ] The y-coordinate of the center of the circle.
 - radius [ **number** ] The radius of the circle.
@@ -143,7 +143,7 @@ Display.drawTriangle( x1, y1, x2, y2, x3, y3, color )
 ```
 
 Draws a triangle with the specified vertices and color.
-Arguments:
+**Arguments:**
 
 Arguments"
 - x1 [ **number** ] The x-coordinate of the first vertex.
@@ -163,7 +163,7 @@ Display.drawFilledTriangle( x1, y1, x2, y2, x3, y3, color )
 ```
 
 Draws a filled triangle with the specified vertices and color.
-Arguments:
+**Arguments:**
 
 Arguments"
 - x1 [ **number** ] The x-coordinate of the first vertex.
@@ -184,7 +184,7 @@ Display.drawRect( x, y, width, height, color )
 
 Draws a rectangle with the specified position, width, height, and color.
 
-Arguments:
+**Arguments:**
 - x [ **number** ] The x-coordinate of the top-left corner of the rectangle.
 - y [ **number** ] The y-coordinate of the top-left corner of the rectangle.
 - width [ **number** ] The width of the rectangle.
@@ -201,7 +201,7 @@ Display.drawFilledRect( x, y, width, height, color )
 
 Draws a filled rectangle with the specified position, width, height, and color.
 
-Arguments:
+**Arguments:**
 - x [ **number** ] The x-coordinate of the top-left corner of the rectangle.
 - y [ **number** ] The y-coordinate of the top-left corner of the rectangle.
 - width [ **number** ] The width of the rectangle.
@@ -282,7 +282,7 @@ Display.setRenderDistance( distance )
 
 Sets the render distance of the display.
 
-Arguments:
+**Arguments:**
 - distance [ **number** ] The render distance to set.
 
 ---
@@ -295,7 +295,7 @@ Display.enableTouchScreen( bool )
 
 Enables or disables the touchscreen functionality.
 
-Arguments:
+**Arguments:**
 - bool [ **boolean** ] True to enable touch screen, false to disable.
 
 ---
@@ -337,7 +337,7 @@ If you let's say draw a lot of things like rectangles, text, etc with this enabl
 So please only use this when you're not going to draw a lot and your display doesn't get updated a lot!
 {{< /callout >}}
 
-Arguments:
+**Arguments:**
 - bool [ **boolean** ] True to enable auto-update, false to disable.
 
 ---
@@ -350,7 +350,7 @@ Display.setOptimizationThreshold( int )
 
 This function sets the optimization threshold of the display. Our displays optimize the effect count by grouping similar-colored pixels together into one larger effect. The integer (ranging between 0 and 1) dictates how similar the neighboring pixels' colors have to be, with 0 requiring them to be exactly the same RGB value and 1 allowing any RGB value.
 
-Arguments:
+**Arguments:**
 - int [ **number** ] The optimization threshold to set.
 
 ---
@@ -363,7 +363,7 @@ Display.calcTextSize( text )
 
 Calculate the text's bounding box
 
-Arguments:
+**Arguments:**
 - text [ **string** ] The text to calculate its size.
 
 Returns:
