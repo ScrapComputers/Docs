@@ -331,7 +331,7 @@ Display.autoUpdate( bool )
 
 Sets whether the display should automatically update.
 
-{{< callout context="caution" title="Peformance note!" icon="outline/alert-triangle" >}}
+{{< callout context="caution" title="Peformance Tanker!" icon="outline/alert-triangle" >}}
 If you let's say draw a lot of things like rectangles, text, etc with this enabled. Your game would lag a LOT! And the network would be spammed with network requests!
 
 So please only use this when you're not going to draw a lot and your display doesn't get updated a lot!
@@ -348,7 +348,12 @@ Arguments:
 Display.setOptimizationThreshold( int )
 ```
 
-This function sets the optimization threshold of the display. Our displays optimize the effect count by grouping similar-colored pixels together into one larger effect. The integer (ranging between 0 and 1) dictates how similar the neighboring pixels' colors have to be, with 0 requiring them to be exactly the same RGB value and 1 allowing any RGB value.
+This depends on the optimization you need. Our optimization merges pixels to save on effects. The threshold you would be setting would be how similuar the 2 pixel's color its trying to merge to be.
+
+The higher, the more optimized it is at a cost on quality.
+The lower, the less optimized it is but with more quality.
+
+The range is to 0-1
 
 Arguments:
 - int [ **number** ] The optimization threshold to set.
@@ -361,7 +366,11 @@ Arguments:
 Display.calcTextSize( text )
 ```
 
-Calculate the text's bounding box
+Calculate the size that the string would use
+
+{{< callout context="note" title="Note" icon="outline/info-circle" >}}
+This function would think that the text's location is at pixel 1, 1! At the time you cannot change that so if you need to, Reimplement this function in the computer's code!
+{{< /callout >}}
 
 Arguments:
 - text [ **string** ] The text to calculate its size.
