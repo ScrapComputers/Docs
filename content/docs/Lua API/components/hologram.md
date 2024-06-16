@@ -76,4 +76,4 @@ Gets the object via Object ID and returns a table containing the data of that ob
 - index [ **number** ] The object you wanna get its data.
 
 **Returns:**
-- [ **[HologramObject](/docs/lua-api/user-data/hologram object/)?** ] Ether u get a table (so the object exists) or nil (so the object does NOT exist)
+- [ **[HologramObject](/docs/lua-api/user-data/hologramobject/)?** ] Ether u get a table (so the object exists) or nil (so the object does NOT exist)

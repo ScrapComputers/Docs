@@ -11,159 +11,172 @@ All data inside the `sc` namespace!
 
 ### getDisplays
 
-Gets all connected displays from the computer
-
 ```lua
 sc.getDisplays()
 ```
 
+Gets all connected displays from the computer
+
 **Returns:**
-- [ **DisplayComponent[]** ] All connected displays from the computer
+- [ **[Display](/docs/lua-api/components/display/)[]** ] All connected displays from the computer
 
 ---
 
 ### getDrives
 
-Gets all connected drives from the computer
-
 ```lua
 sc.getDrives()
 ```
 
+Gets all connected drives from the computer
+
 **Returns:**
-- [ **DriveComponent[]** ] All connected drives from the computer
+- [ **[Drive](/docs/lua-api/components/drive/)[]** ] All connected drives from the computer
 
 ---
 
 ### getHolograms
 
-Gets all connected holograms from the computer
-
 ```lua
 sc.getHolograms()
 ```
 
+Gets all connected holograms from the computer
+
 **Returns:**
-- [ **HologramComponent[]** ] All connected holograms from the computer
+- [ **[Hologram](/docs/lua-api/components/hologram/)[]** ] All connected holograms from the computer
 
 ---
 
 ### getTerminals
 
-Gets all connected terminals from the computer
-
 ```lua
 sc.getTerminals()
 ```
 
+Gets all connected terminals from the computer
+
 **Returns:**
-- [ **TerminalComponent[]** ] All connected terminals from the computer
+- [ **[Terminal](/docs/lua-api/components/terminal/)[]** ] All connected terminals from the computer
 
 ---
 
 ### getRadars
 
-Gets all connected radars from the computer
-
 ```lua
 sc.getRadars()
 ```
 
+Gets all connected radars from the computer
+
 **Returns:**
-- [ **RadarComponent[]** ] All connected radars from the computer
+- [ **[Radar](/docs/lua-api/components/radar/)[]** ] All connected radars from the computer
 
 ---
 
 ### getNetworkPorts
 
-Gets all connected network ports from the computer
-
 ```lua
 sc.getNetworkPorts()
 ```
 
+Gets all connected network ports from the computer
+
 **Returns:**
-- [ **NetworkPortComponent[]** ] All connected network ports from the computer
+- [ **[NetworkPort](/docs/lua-api/components/networkport/)[]** ] All connected network ports from the computer
 
 ---
 
 ### getCameras
 
-Gets all connected cameras from the computer
-
 ```lua
 sc.getCameras()
 ```
 
+Gets all connected cameras from the computer
+
 **Returns:**
-- [ **CameraComponent[]** ] All connected cameras from the computer
+- [ **[Camera](/docs/lua-api/components/camera/)[]** ] All connected cameras from the computer
 
 ---
 
 ### getSpeakers
 
-Gets all connected speakers from the computer
-
 ```lua
 sc.getSpeakers()
 ```
 
+Gets all connected speakers from the computer
+
 **Returns:**
-- [ **SpeakerComponent[]** ] All connected speakers from the computer
+- [ **[Speaker](/docs/lua-api/components/speaker/)[]** ] All connected speakers from the computer
 
 ---
 
 ### getKeyboards
 
-Gets all connected keyboards from the computer
-
 ```lua
 sc.getKeyboards()
 ```
 
-**Returns:**
-- [ **KeyboardComponent[]** ] All connected keyboards from the computer
+Gets all connected keyboards from the computer
 
+
+**Returns:**
+- [ **[Keyboard](/docs/lua-api/components/keyboard/)[]** ] All connected keyboards from the computer
 
 ---
 
 ### getMotors
 
-Gets all connected motors from the computer
-
 ```lua
 sc.getMotors()
 ```
 
+Gets all connected motors from the computer
+
 **Returns:**
-- [ **MotorComponent[]** ] All connected motors from the computer
+- [ **[Motor](/docs/lua-api/components/motor/)[]** ] All connected motors from the computer
 
 ---
 
 ### getLasers
 
-Gets all connected lasers from the computer
-
 ```lua
 sc.getLasers()
 ```
 
+Gets all connected lasers from the computer
+
 **Returns:**
-- [ **LaserComponent[]** ] All connected lasers from the computer
+- [ **[Laser](/docs/lua-api/components/laser/)[]** ] All connected lasers from the computer
+
+---
+
+### getSeatControllers
+
+```lua
+sc.getSeatControllers()
+```
+
+Gets all connected SeatControllers from the computer
+
+**Returns:**
+- [ **[SeatController](/docs/lua-api/components/seatcontroller/)[]** ] All connected SeatControllers from the computer
 
 ---
 
 ### getReg
+
+```lua
+sc.getReg( registerName )
+```
 
 Gets a value of a register.
 
 {{< callout context="note" icon="outline/info-circle" >}}
 The name of the register should be from a **Input** Register
 {{< /callout >}}
-
-```lua
-sc.getReg( registerName )
-```
 
 **Arguments:**
 - registerName [ **string** ] The name of the register to read.
@@ -174,15 +187,15 @@ sc.getReg( registerName )
 
 ### setReg
 
+```lua
+sc.setReg( registerName, power )
+```
+
 Sets a value of a register.
 
 {{< callout context="note" icon="outline/info-circle" >}}
 The name of the register should be from a **Output** Register
 {{< /callout >}}
-
-```lua
-sc.setReg( registerName, power )
-```
 
 **Arguments:**
 - registerName [ **string** ] The name of the register to read.

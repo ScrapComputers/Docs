@@ -124,3 +124,7 @@ mainSections = ["docs", "blog"]
     article = [] # Article sections
     newsArticle = [] # NewsArticle sections
     product = [] # Product sections
+
+# Add-ons
+[add_ons]
+  docSearch = true # false (default) or true

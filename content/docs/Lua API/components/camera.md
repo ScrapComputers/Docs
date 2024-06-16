@@ -86,6 +86,56 @@ Like getFrame but it's as slices meaning you could make CCTV cameras without lag
 
 ---
 
+
+### getAdvancedFrame
+
+```lua
+Camera.getAdvancedFrame( width, height, fovX, fovY, xOffset, yOffset )
+```
+
+{{< callout context="caution" title="Performance note!" icon="outline/alert-triangle" >}}
+The advanced functions use **CPU-Based Raytracing (Via Raycasting)** to render your frame(s). So this will use a ton of your CPU!
+{{< /callout >}}
+
+Takes a frame (aka a screenshot)
+
+**Arguments:**
+- width [ **integer** ] The width of the frame
+- height [ **integer** ] The height of the frame
+- fovX [ **number** ] The FOV on x-axis
+- fovY [ **number** ] The FOV on y-axis
+- xOffset [ **integer?** ] The applied x offset for the frame. By default, it's at 0 so at the top, it would be rendered there
+- yOffset [ **integer?** ] The applied y offset for the frame. By default, it's at 0 so at the left, it would be rendered there
+
+**Returns:**
+- [ **[DisplayPixelTable](/docs/lua-api/components/display/#pixeltable)** ] The pixels of the frame
+
+---
+
+### getAdvancedVideo
+
+```lua
+Camera.getAdvancedVideo( width, height, fovX, fovY, sliceWidth, xOffset, yOffset )
+```
+
+{{< callout context="caution" title="Performance note!" icon="outline/alert-triangle" >}}
+The advanced functions use **CPU-Based Raytracing (Via Raycasting)** to render your frame(s). So this will use a ton of your CPU!
+{{< /callout >}}
+
+Like getFrame but it's as slices meaning you could make CCTV cameras without lagging a lot! It's just that the refresh rate would be lower.
+
+**Arguments:**
+- width [ **integer** ] The width of the frame
+- height [ **integer** ] The height of the frame
+- fovX [ **number** ] The FOV on x-axis
+- fovY [ **number** ] The FOV on y-axis
+- sliceWidth [ **integer** ] The width for each slice
+- xOffset [ **integer?** ] The applied x offset for the frame. By default, it's at 0 so at the top, it would be rendered there
+- yOffset [ **integer?** ] The applied y offset for the frame. By default, it's at 0 so at the left, it would be rendered there
+
+**Returns:**
+- [ **DisplayPixelsTable** ] The pixels of the frame
+
 ### toggleRandom
 
 ```lua
