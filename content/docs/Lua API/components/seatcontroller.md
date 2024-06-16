@@ -99,9 +99,9 @@ Sets the power for AD movement
 </s>
 
 {{< callout context="caution" title="Unusable at the time!" icon="outline/alert-triangle" >}}
-This function is planned to be implemented however SM sucks! At the time we think that its because 2 scripts are slaughtering them together. 1 wants to make a variable like this and other like this. Its like Battleroyal but with Lua and its handeled like actual dog poop!
+This function is planned to be implemented however SM sucks! At the time we think that it's because 2 scripts are slaughtering them together. 1 wants to make a variable like this and others like this. It's like Battle Royal but with Lua and it's handled like actual dog poop!
 
-When it was implemented, afther 1 commit. The next commit was named: `Removed WS and AD power set because sm is dumb`. We hate this!
+When it was implemented, after 1 commit. The next commit was named: `Removed WS and AD power set because sm is dumb`. We hate this!
 {{< /callout >}}
 
 ---
@@ -122,7 +122,7 @@ Sets the power for WS movement
 </s>
 
 {{< callout context="caution" title="Unusable at the time!" icon="outline/alert-triangle" >}}
-This function is planned to be implemented however SM sucks! At the time we think that its because 2 scripts are slaughtering them together. 1 wants to make a variable like this and other like this. Its like Battleroyal but with Lua and its handeled like actual dog poop!
+This function is planned to be implemented however SM sucks! At the time we think that it's because 2 scripts are slaughtering them together. 1 wants to make a variable like this and others like this. It's like Battle Royal but with Lua and it's handled like actual dog poop!
 
-When it was implemented, afther 1 commit. The next commit was named: `Removed WS and AD power set because sm is dumb`. We hate this!
+When it was implemented, after 1 commit. The next commit was named: `Removed WS and AD power set because sm is dumb`. We hate this!
 {{< /callout >}}
