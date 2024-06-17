@@ -184,6 +184,7 @@ The name of the register should be from a **Input** Register
 **Returns:**
 - [ **number** ] The value it's receiving. (For things like logic gates: 0 is Off, 1 is On)
 
+---
 
 ### setReg
 
@@ -198,5 +199,5 @@ The name of the register should be from a **Output** Register
 {{< /callout >}}
 
 **Arguments:**
-- registerName [ **string** ] The name of the register to read.
+- registerName [ **string** ] The name of the register to write.
 - power [ **number** ] The value to set it to. (This is power!)
