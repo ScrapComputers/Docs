@@ -26,7 +26,7 @@ This contains touch data when the user interacts with the display AKA "touches t
 
 ### PixelTable
 
-A pixel table is an array of pixels. Each item inside it contains the data below. Each value inside has a use case
+Pixel table's arepixel information that would be used to draw on the display. Kinda like instructions.
 
 ```lua
 {
@@ -70,7 +70,7 @@ Display.drawFromTable( tbl )
 Draws shapes and text based on data provided in a table.
 
 **Arguments:**
-- tbl [ **[PixelTable](#pixeltable)** ] A table containing drawing commands and parameters.
+- tbl [ **[PixelTable](#pixeltable)[]** ] All instructions to run through
 
 ---
 
@@ -248,7 +248,7 @@ Display.getDimensions()
 
 Retrieves the dimensions of the display.
 
-Returns:
+**Returns:**
 - [ **number** ] The width of the display
 - [ **number** ] The height of the display
 
@@ -308,7 +308,7 @@ Display.getTouchData()
 
 Retrieves touch data from the touch screen.
 
-Returns:
+**Returns:**
 - [ **[TouchData](#touchdata)** ] A table containing touch data such as coordinates and touch state.
 
 ---
@@ -366,6 +366,6 @@ Calculate the text's bounding box
 **Arguments:**
 - text [ **string** ] The text to calculate its size.
 
-Returns:
+**Returns:**
 - [ **number** ] The width that the text would consume
 - [ **number** ] The height that the text would consume

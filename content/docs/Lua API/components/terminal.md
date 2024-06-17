@@ -18,7 +18,7 @@ Terminal.send( msg )
 Sends a message to the terminal
 
 **Arguments:**
-- msg string
+- msg [ **string** ] The message to send
 
 ---
 
@@ -38,7 +38,7 @@ Clears all data.
 Terminal.clearInputHistory()
 ```
 
-Clears the userinput
+Clears the user's input history
 
 ---
 

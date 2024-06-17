@@ -30,7 +30,7 @@ Returns true if a tlua table is safe to convert to JSON.
 ### toString
 
 ```lua
-sc.json.isSafe( root, prettify, indent )
+sc.json.toString( root, prettify, indent )
 ```
 
 Converts a lua table to a JSON string.

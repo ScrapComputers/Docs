@@ -159,4 +159,4 @@ Converts a table to the same thing but as a string. If you were to try doing thi
 - tbl [ **table** ] The table
 
 **Returns:**
-- [ **string** ] The converted lua table is a string.
+- [ **string** ] The converted lua table as a string.

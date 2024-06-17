@@ -16,7 +16,7 @@ Contains data on the seat.
 #### Fields
 - `wsPower` [ **1|0|-1** ] The power for WS. 1 = Forwards, 0 = None, -1 = Backwards
 - `adPower` [ **1|0|-1** ] The power for AD. 1 = Left, 0 = None, -1 = Right
-- `characterName` [ **string?** ] The character's name that is sitting.
+- `characterName` [ **string?** ] The characters name that is sitting.
 
 ### JointData
 
@@ -66,7 +66,7 @@ SeatController.pressButton( index )
 Presses a button connected to the seat
 
 **Arguments:**
-- index [ **number** ] The button to press (0 to 9)
+- index [ **integer** ] The button to press (0 to 9)
 
 ---
 
@@ -79,7 +79,7 @@ SeatController.releaseButton( index )
 Releases a button connected to the seat
 
 **Arguments:**
-- index [ **number** ] The button to release (0 to 9)
+- index [ **integer** ] The button to release (0 to 9)
 
 ---
 

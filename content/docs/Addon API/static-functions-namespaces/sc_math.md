@@ -14,7 +14,7 @@ A helper module for your needs that are math-related
 ### clamp
 
 ```lua
-sc.math.clamp(value, min, max)
+sc.math.clamp( value, min, max )
 ```
 
 Clamps a number value to be ranged from the min argument to the max argument.

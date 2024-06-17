@@ -35,7 +35,7 @@ This structure contains data that the laser has received
 Laser.setDistance( distance )
 ```
 
-Sets the distance
+Sets the distance (In Meters!)
 
 **Arguments:**
 - distance [ **number** ] The new distance

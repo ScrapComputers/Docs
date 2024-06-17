@@ -5,7 +5,7 @@ description: "The hologram component"
 
 ## Description
 
-The hologram are like [Display's](../display/) but instead of being in [2D](https://en.wikipedia.org/wiki/2D_computer_graphics), Its in [3D](https://en.wikipedia.org/wiki/3D_computer_graphics). You can r
+The hologram are like [Displays](../display/) but instead of being in [2D](https://en.wikipedia.org/wiki/2D_computer_graphics), its in [3D](https://en.wikipedia.org/wiki/3D_computer_graphics). You can show objects in 3D with this
 
 ## Functions
 

@@ -20,7 +20,7 @@ NetworkPort.getAntenna()
 Gets the connected antenna
 
 **Returns:**
-- [ **[AntennaComponent](/docs/lua-api/components/antenna/)?] The antenna if it is connected, else nil
+- [ **[AntennaComponent](/docs/lua-api/components/antenna/)**?] The antenna if it is connected, else nil
 
 ---
 

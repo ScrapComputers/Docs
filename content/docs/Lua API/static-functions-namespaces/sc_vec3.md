@@ -96,8 +96,8 @@ Calculates the distance between 2 vectors
 Formula: {{< math >}}$\sqrt{(x_2 - x_1) ^ 2 + (y_2 - y_1) ^ 2 + (z_2 - z_1) ^ 2}${{< /math >}}
 
 **Arguments:**
-- vec1 [ **[Vec3](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Vec3)** ] The vector3 to modify
-- vec2 [ **[Vec3](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Vec3)** ] The vector3 to modify
+- vec1 [ **[Vec3](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Vec3)** ] The 1st vector3
+- vec2 [ **[Vec3](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Vec3)** ] The 2nd vector3
 
 **Returns:**
 - [ **number** ] The distance between the 2 vectors

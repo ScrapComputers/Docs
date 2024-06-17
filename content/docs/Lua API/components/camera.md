@@ -34,8 +34,8 @@ Takes a frame (aka a screenshot)
 - height [ **integer** ] The height of the frame
 - fovX [ **number** ] The FOV on x-axis
 - fovY [ **number** ] The FOV on y-axis
-- xOffset [ **integer?** ] The applied x offset for the frame. By default, it's at 0 so at the top, it would be rendered there
-- yOffset [ **integer?** ] The applied y offset for the frame. By default, it's at 0 so at the left, it would be rendered there
+- xOffset [ **integer** ] The applied x offset for the frame. By default, it's at 0 so at the top, it would be rendered there
+- yOffset [ **integer** ] The applied y offset for the frame. By default, it's at 0 so at the left, it would be rendered there
 
 **Returns:**
 - [ **[DisplayPixelTable](/docs/lua-api/components/display/#pixeltable)** ] The pixels of the frame
@@ -56,8 +56,8 @@ Arguments
 - fovX [ **number** ] The FOV on x-axis
 - fovY [ **number** ] The FOV on y-axis
 - focalLength [ **integer** ] The focal's length
-- xOffset [ **integer?** ] The applied x offset for the frame. By default, it's at 0 so at the top, it would be rendered there
-- yOffset [ **integer?** ] The applied y offset for the frame. By default, it's at 0 so at the left, it would be rendered there
+- xOffset [ **integer** ] The applied x offset for the frame. By default, it's at 0 so at the top, it would be rendered there
+- yOffset [ **integer** ] The applied y offset for the frame. By default, it's at 0 so at the left, it would be rendered there
 
 **Returns:**
 - [ **DisplayPixelsTable** ] The pixels of the frame
@@ -78,8 +78,8 @@ Like getFrame but it's as slices meaning you could make CCTV cameras without lag
 - fovX [ **number** ] The FOV on x-axis
 - fovY [ **number** ] The FOV on y-axis
 - sliceWidth [ **integer** ] The width for each slice
-- xOffset [ **integer?** ] The applied x offset for the frame. By default, it's at 0 so at the top, it would be rendered there
-- yOffset [ **integer?** ] The applied y offset for the frame. By default, it's at 0 so at the left, it would be rendered there
+- xOffset [ **integer** ] The applied x offset for the frame. By default, it's at 0 so at the top, it would be rendered there
+- yOffset [ **integer** ] The applied y offset for the frame. By default, it's at 0 so at the left, it would be rendered there
 
 **Returns:**
 - [ **DisplayPixelsTable** ] The pixels of the frame
@@ -104,8 +104,8 @@ Takes a frame (aka a screenshot)
 - height [ **integer** ] The height of the frame
 - fovX [ **number** ] The FOV on x-axis
 - fovY [ **number** ] The FOV on y-axis
-- xOffset [ **integer?** ] The applied x offset for the frame. By default, it's at 0 so at the top, it would be rendered there
-- yOffset [ **integer?** ] The applied y offset for the frame. By default, it's at 0 so at the left, it would be rendered there
+- xOffset [ **integer** ] The applied x offset for the frame. By default, it's at 0 so at the top, it would be rendered there
+- yOffset [ **integer** ] The applied y offset for the frame. By default, it's at 0 so at the left, it would be rendered there
 
 **Returns:**
 - [ **[DisplayPixelTable](/docs/lua-api/components/display/#pixeltable)** ] The pixels of the frame
@@ -130,8 +130,8 @@ Like getFrame but it's as slices meaning you could make CCTV cameras without lag
 - fovX [ **number** ] The FOV on x-axis
 - fovY [ **number** ] The FOV on y-axis
 - sliceWidth [ **integer** ] The width for each slice
-- xOffset [ **integer?** ] The applied x offset for the frame. By default, it's at 0 so at the top, it would be rendered there
-- yOffset [ **integer?** ] The applied y offset for the frame. By default, it's at 0 so at the left, it would be rendered there
+- xOffset [ **integer** ] The applied x offset for the frame. By default, it's at 0 so at the top, it would be rendered there
+- yOffset [ **integer** ] The applied y offset for the frame. By default, it's at 0 so at the left, it would be rendered there
 
 **Returns:**
 - [ **DisplayPixelsTable** ] The pixels of the frame

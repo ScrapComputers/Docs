@@ -18,7 +18,7 @@ HologramObject.getId()
 Gets the ID of the object
 
 **Returns:**
-- [ **number** ] The ID of the object
+- [ **integer** ] The ID of the object
 
 ---
 
@@ -125,7 +125,7 @@ Sets the object's Rotation to be the argument.
 - value [ **Quat** ] The New Rotation
 
 ---
-### setPosition
+### setScale
 
 ```lua
 HologramObject.setScale( value )
@@ -170,4 +170,4 @@ HologramObject.isDeleted()
 Returns true if the object has been deleted
 
 **Returns:**
-- [ **boolean** ] If true, the object is deleted. else it's false and it's NOT deleted.
+- [ **boolean** ] If true, the object is deleted and else it's false and it's NOT deleted.

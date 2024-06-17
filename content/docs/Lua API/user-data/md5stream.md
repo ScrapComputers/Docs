@@ -9,7 +9,7 @@ This is an MD5 Stream, Allows you to add additional data.
 
 ## Fields
 
-- a [ **number** ] Unknown. Default Value is ` 0x67452301 ` (Number form: ` 1732584193 `)
+- a [ **number** ] Unknown. The Default Value is ` 0x67452301 ` (Number form: ` 1732584193 `)
 - b [ **number** ] Unknown. The default value is ` 0xefcdab89 ` (Number form: ` 4023233417 `)
 - c [ **number** ] Unknown. The default value is ` 0x98badcfe ` (Number form: ` 2562383102 `)
 - d [ **number** ] Unknown. The default value is ` 0x10325476 ` (Number form: ` 271733878 `)

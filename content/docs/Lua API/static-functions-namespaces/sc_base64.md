@@ -30,7 +30,7 @@ Converts a string to be Base64 encoded
 ### decode
 
 ```lua
-sc.base64.encode( data )
+sc.base64.decode( data )
 ```
 
 Decodes a base64 string

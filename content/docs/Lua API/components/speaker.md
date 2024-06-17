@@ -76,7 +76,7 @@ This is going to be sent to the queue, Flush the queue to play it!
 ### playNoteEffect
 
 ```lua
-Speaker.playNoteEffect( pitch, note, durationTicks )
+Speaker.playNoteEffect( name, params, durationTicks )
 ```
 
 Plays whatever event effect you specify!
@@ -91,7 +91,7 @@ Plays whatever event effect you specify!
 ### playNoteEffectQueue
 
 ```lua
-Speaker.playNoteEffectQueue( pitch, note, durationTicks )
+Speaker.playNoteEffectQueue( name, params, durationTicks )
 ```
 
 Plays whatever event effect you specify!
@@ -129,7 +129,7 @@ Speaker.removeNote( noteIndex )
 Remove a note from the queue
 
 **Arguments:**
-- noteIndex [ **number** ] The index where the note is located
+- noteIndex [ **integer** ] The index where the note is located
 
 ---
 
@@ -152,4 +152,4 @@ Speaker.getCurrentQueueSize()
 Returns the size of the queue
 
 **Returns:**
-- queueSize [ **number** ] The size of the queue.
+- queueSize [ **integer** ] The size of the queue.
