@@ -18,7 +18,7 @@ sc.md5.new()
 Creates a new MD5 Stream
 
 **Returns:**
-- [ **[MD5Stream](/docs/lua-api/)** ] The new MD5 stream
+- [ **[MD5Stream](/docs/lua-api/user-data/md5stream/)** ] The new MD5 stream
 
 ---
 

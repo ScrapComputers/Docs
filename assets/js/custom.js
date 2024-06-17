@@ -15,7 +15,7 @@ const sortList = (ulElement, level) => {
     let liElements = []
 
     Array.from(ulElement.querySelectorAll("li")).forEach(element => {
-        if(element.parentElement == ulElement)
+        if (element.parentElement == ulElement)
             liElements.push(element.cloneNode(true))
     })
 
@@ -37,8 +37,7 @@ const sortList = (ulElement, level) => {
 }
 
 // Check if its at the documentation website
-if(window.location.pathname.startsWith("/docs"))
-{
+if (window.location.pathname.startsWith("/docs")) {
     console.log("[CUSTOM]: We are at a documentation section! Sorting the list....")
     sortList(document.querySelector(".content").querySelector(".docs-links").querySelector("ul"), 0)
 }
@@ -53,10 +52,8 @@ console.log("[CUSTOM]: Added a colorbar")
 
 // Doks doesn't scroll upwards when you go to a new page without a hash
 // This fixes it
-function onLoop()
-{
-    if(!window.location.hash.startsWith("#"))
-    {
+function onLoop() {
+    if (!window.location.hash.startsWith("#")) {
         // Send message indicating it has to scroll up
         console.log("[CUSTOM] Scrollbar: Attempting to scroll upwards!")
 
@@ -68,14 +65,13 @@ function onLoop()
     }
 
     // Check if the scrollY isnt 0. if so then request the next animation frame.
-    if(window.scrollY !== 0)
+    if (window.scrollY !== 0)
         requestAnimationFrame(onLoop)
 }
 
 
 // Check if its a documentation website and we arent going to direct to a specifc function
-if(!window.location.hash.startsWith("#") && window.location.pathname.startsWith("/docs"))
-{
+if (!window.location.hash.startsWith("#") && window.location.pathname.startsWith("/docs")) {
     // Time to start the loop!
     console.log("[CUSTOM]: Created window movement to top")
     onLoop()
@@ -94,4 +90,37 @@ searchQuery.addEventListener("keyup", (ev) => {
 
         console.log(link)
     })
+})
+
+// Code stolen from color-mode
+const setTheme = function (theme) {
+    if (theme === "auto" && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.documentElement.setAttribute("data-bs-theme", "dark");
+    } else {
+        document.documentElement.setAttribute("data-bs-theme", theme);
+    }
+}
+
+const storedTheme = localStorage.getItem("theme");
+const getPreferredTheme = () => {
+    if (storedTheme)
+        return storedTheme
+
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+};
+
+setTheme(getPreferredTheme())
+
+
+// Fix button not having click event
+const buttonColorMode = document.getElementById("buttonColorMode")
+
+buttonColorMode.querySelectorAll("svg").forEach(toggle => {
+    toggle.addEventListener("click", (ev) => {
+        ev.stopImmediatePropagation()
+
+        const theme = toggle.getAttribute("data-bs-theme-value")
+        localStorage.setItem("theme", theme)
+        setTheme(theme)
+    }, true)
 })

@@ -1,0 +1,4 @@
+# Doks (@hyas/doks-core)
+[doks]
+  # Global alert
+  alert = false # false (default) or true
