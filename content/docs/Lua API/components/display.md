@@ -57,7 +57,7 @@ Draws a single pixel at the specified coordinates with the given color.
 **Arguments:**
 - x [ **number** ] The x-coordinate of the pixel.
 - y [ **number** ] The y-coordinate of the pixel.
-- color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string?** ] The color of the pixel in hexadecimal format.
+- color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string** ] The color of the pixel in hexadecimal format.
 
 ---
 
@@ -83,7 +83,7 @@ Display.clear( color )
 Clears the display with the specified color.
 
 **Arguments:**
-- color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string?** ] The color to clear the display with, in hexadecimal format. (If nil, It will clear the screen with the default color)
+- color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string** ] The color to clear the display with, in hexadecimal format. (If nil, It will clear the screen with the default color)
 
 ---
 
@@ -100,7 +100,7 @@ Draw a line between two points with the specified color.
 - y [ **number** ] The y-coordinate of the starting point.
 - x1 [ **number** ] The x-coordinate of the ending point.
 - y1 [ **number** ] The y-coordinate of the ending point.
-- color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string?** ] The color of the line in hexadecimal format.
+- color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string** ] The color of the line in hexadecimal format.
 
 ---
 
@@ -116,7 +116,7 @@ Draws a circle with the specified center coordinates, radius, and color.
 - x [ **number** ] The x-coordinate of the center of the circle.
 - y [ **number** ] The y-coordinate of the center of the circle.
 - radius [ **number** ] The radius of the circle.
-- color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string?** ] The color of the circle in hexadecimal format.
+- color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string** ] The color of the circle in hexadecimal format.
 
 ---
 
@@ -132,7 +132,7 @@ Draws a filled circle with the specified center coordinates, radius, and color.
 - x [ **number** ] The x-coordinate of the center of the circle.
 - y [ **number** ] The y-coordinate of the center of the circle.
 - radius [ **number** ] The radius of the circle.
-- color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string?** ] The color of the circle in hexadecimal format.
+- color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string** ] The color of the circle in hexadecimal format.
 
 ---
 
@@ -152,7 +152,7 @@ Arguments"
 - y2 [ **number** ] The y-coordinate of the second vertex.
 - x3 [ **number** ] The x-coordinate of the third vertex.
 - y3 [ **number** ] The y-coordinate of the third vertex.
-- color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string?** ] The color of the triangle in hexadecimal format.
+- color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string** ] The color of the triangle in hexadecimal format.
 
 ---
 
@@ -172,7 +172,7 @@ Arguments"
 - y2 [ **number** ] The y-coordinate of the second vertex.
 - x3 [ **number** ] The x-coordinate of the third vertex.
 - y3 [ **number** ] The y-coordinate of the third vertex.
-- color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string?** ] The color of the triangle in hexadecimal format.
+- color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string** ] The color of the triangle in hexadecimal format.
 
 ---
 
@@ -189,7 +189,7 @@ Draws a rectangle with the specified position, width, height, and color.
 - y [ **number** ] The y-coordinate of the top-left corner of the rectangle.
 - width [ **number** ] The width of the rectangle.
 - height [ **number** ] The height of the rectangle.
-- color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string?** ] The color of the rectangle in hexadecimal format.
+- color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string** ] The color of the rectangle in hexadecimal format.
 
 ---
 
@@ -206,7 +206,7 @@ Draws a filled rectangle with the specified position, width, height, and color.
 - y [ **number** ] The y-coordinate of the top-left corner of the rectangle.
 - width [ **number** ] The width of the rectangle.
 - height [ **number** ] The height of the rectangle.
-- color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string?** ] The color of the rectangle in hexadecimal format.
+- color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string** ] The color of the rectangle in hexadecimal format.
 
 ---
 
@@ -221,7 +221,7 @@ Draws text at the specified position with the specified color.
 - x [ **number** ] The x-coordinate of the text.
 - y [ **number** ] The y-coordinate of the text.
 - string [ **string** ] The text to draw.
-- color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string?** ] The color of the text in hexadecimal format.
+- color [ **[Color](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Color/)|string** ] The color of the text in hexadecimal format.
 - fontName [ **string?** ] The font to use. (defaults to whatever the default font the font manager is using)
 
 ---
