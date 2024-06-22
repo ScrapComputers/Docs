@@ -65,7 +65,7 @@ Takes a depth map frame (aka a screenshot) and returns it
 ### getMaskedFrame
 
 ```lua
-Camera.getMaskedFrame( width, height, fovX, fovY, xOffset, yOffset )
+Camera.getMaskedFrame( width, height, fovX, fovY, mask, xOffset, yOffset )
 ```
 
 Takes a masked map frame (aka a screenshot) and returns it
