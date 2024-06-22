@@ -3,9 +3,9 @@ title: "Speaker"
 description: "The speaker component"
 ---
 
-## Description
-
 The speaker allows you to play ANY kind of sound and we mean ANYTHING!
+
+---
 
 ## Functions
 

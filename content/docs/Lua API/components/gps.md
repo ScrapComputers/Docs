@@ -3,9 +3,9 @@ title: "GPS"
 description: "The gps component"
 ---
 
-## Description
-
 Allows you to get information on such things like velocity, rotation and etc
+
+---
 
 ## Strucutres
 
@@ -25,6 +25,8 @@ Contains GPS data
 - `forwardAcceleration` [ **number** ] The forwards acceleration
 - `horizontalAcceleration` [ **number** ] The horizontal acceleration
 - `verticalAcceleration` [ **number** ] The vertical acceleration
+
+---
 
 ## Functions
 

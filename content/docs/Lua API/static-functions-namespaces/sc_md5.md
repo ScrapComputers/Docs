@@ -3,9 +3,9 @@ title: "sc.md5"
 description: "The MD5 Module (Computer API)"
 ---
 
-## Description
-
 An encryption module for MD5 only! (Even tho it's no longer recommended to use this for encryption! )
+
+---
 
 ## Functions
 

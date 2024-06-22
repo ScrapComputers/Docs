@@ -3,9 +3,9 @@ title: "sc.table"
 description: "The Table Module (Computer API)"
 ---
 
-## Description
-
 The Table Module for the computer API!
+
+---
 
 ## Functions
 

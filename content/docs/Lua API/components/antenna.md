@@ -3,8 +3,6 @@ title: "Antenna"
 description: "The antenna component"
 ---
 
-## Description
-
 The antenna component is connected to a network port. If connected, You would be able to send data to other antenna's wireless!
 
 ---

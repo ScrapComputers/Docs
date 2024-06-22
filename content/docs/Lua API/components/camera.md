@@ -3,8 +3,6 @@ title: "Camera"
 description: "The camera component"
 ---
 
-## Description
-
 The camera allows you to take screenshots or even render video from the world to your display! Our camera looks great while not even touching the **raytracing**. There's no raytracing happening! just rays going everywhere as a **multicast**!
 
 This doesn't even touch the complicated math! Just addition, subtraction, division, and multiplication.

@@ -3,8 +3,6 @@ title: "sc.base64"
 description: "The Base64 Module (Computer API)"
 ---
 
-## Description
-
 The Base64 Module for the computer API!
 
 ---

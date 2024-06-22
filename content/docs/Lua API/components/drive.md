@@ -3,9 +3,9 @@ title: "Drive"
 description: "The drive component"
 ---
 
-## Description
-
 A drive allows you to store anything* inside it. You can also go interact with it to modify its data there without doing it via code.
+
+---
 
 ## Functions
 
@@ -19,6 +19,8 @@ Receive data from the drive
 
 **Returns:**
 - [ **table** ] The contents of the drive
+
+---
 
 ### save
 

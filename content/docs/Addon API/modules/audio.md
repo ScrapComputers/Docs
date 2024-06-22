@@ -1,9 +1,7 @@
 ---
-title: "sc.audio"
+title: "Audio"
 description: "The Audio Module (Computer API)"
 ---
-
-## Description
 
 The Audio Module for the computer API!
 
@@ -37,7 +35,7 @@ If the issue is empty and hasNoParamsUsableIssue is false. Then there are NO iss
 
 You can check by doing this
 ```lua {lineNos=true}
-if not issues.hasNoParamsUsableIssue and sc.table.getTotalItemsDict(issues.issues) == 0 then
+if not issues.hasNoParamsUsableIssue and sm.scrapcomputers.table.getTotalItemsDict(issues.issues) == 0 then
     -- There are NO issues
 
     print("No issues found")
@@ -56,7 +54,7 @@ end
 ### areParamsCorrect
 
 ```lua
-sc.audio.areParamsCorrect( name, params )
+sm.scrapcomputers.audio.areParamsCorrect( name, params )
 ```
 
 Returns information about audio parameters in case they have any issues.
@@ -73,7 +71,7 @@ Returns information about audio parameters in case they have any issues.
 ### exists
 
 ```lua
-sc.audio.exists( name )
+sm.scrapcomputers.audio.exists( name )
 ```
 
 Returns true if the audio name exists in Scrap Mechanic.
@@ -89,7 +87,7 @@ Returns true if the audio name exists in Scrap Mechanic.
 ### getAudioNames
 
 ```lua
-sc.audio.getAudioNames()
+sm.scrapcomputers.audio.getAudioNames()
 ```
 
 Gets every audio in existence in Scrap Mechanic and puts them all in a **string[]** you can access
@@ -102,7 +100,7 @@ Gets every audio in existence in Scrap Mechanic and puts them all in a **string[
 ### getParams
 
 ```lua
-sc.audio.getParams( name )
+sm.scrapcomputers.audio.getParams( name )
 ```
 
 Gets all usable parameters for that audio.

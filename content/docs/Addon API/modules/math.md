@@ -1,9 +1,7 @@
 ---
-title: "sc.math"
+title: "Math"
 description: "The Math Module (Computer API)"
 ---
-
-## Description
 
 A helper module for your needs that are math-related
 
@@ -14,7 +12,7 @@ A helper module for your needs that are math-related
 ### clamp
 
 ```lua
-sc.math.clamp( value, min, max )
+sm.scrapcomputers.math.clamp( value, min, max )
 ```
 
 Clamps a number value to be ranged from the min argument to the max argument.

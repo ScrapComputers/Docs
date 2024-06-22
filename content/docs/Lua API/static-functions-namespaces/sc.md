@@ -3,9 +3,9 @@ title: "sc"
 description: "All functions inside the \"sc\" namespace."
 ---
 
-## Description
-
 All data inside the `sc` namespace!
+
+---
 
 ## Functions
 

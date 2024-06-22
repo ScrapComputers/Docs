@@ -3,8 +3,6 @@ title: "RadarCharacter"
 description: "A character detected from a radar"
 ---
 
-## Description
-
 A character detected from a radar
 
 ---

@@ -1,9 +1,7 @@
 ---
-title: "sc.json"
+title: "Json"
 description: "The JSON Module (Computer API)"
 ---
-
-## Description
 
 The JSON Module for the computer API!
 
@@ -14,7 +12,7 @@ The JSON Module for the computer API!
 ### isSafe
 
 ```lua
-sc.json.isSafe( root )
+sm.scrapcomputers.json.isSafe( root )
 ```
 
 Returns true if a tlua table is safe to convert to JSON.
@@ -30,14 +28,13 @@ Returns true if a tlua table is safe to convert to JSON.
 ### toString
 
 ```lua
-sc.json.toString( root, safeMode, prettify, indent )
+sm.scrapcomputers.json.toString( root, prettify, indent )
 ```
 
 Converts a lua table to a JSON string.
 
 **Arguments:**
 - root [ **table** ] The lua table to convert to a string
-- safeMode [ **boolean** ] If true, It will check if the root is safe for JSON usage. If it isn't safe then it would error out.
 - prettify [ **boolean** ] If true, The JSON string would be prettier. Use this when you want to display it.
 - indent [ **string?** ] The indentation character. Defaults to "\t"
 
@@ -49,14 +46,13 @@ Converts a lua table to a JSON string.
 ### toTable
 
 ```lua
-sc.json.toTable( root, safeMode )
+sm.scrapcomputers.json.toTable( root )
 ```
 
 Converts a JSON string to a Lua table
 
 **Arguments:**
 - root [ **string** ] The JSON string to convert
-- safeMode [ **boolean** ] If true, It will check if the root is safe for JSON usage. If it isn't safe then it would error out.
 
 **Returns:**
 - [ **table** ] The converted Lua table

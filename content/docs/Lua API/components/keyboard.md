@@ -3,13 +3,13 @@ title: "Keyboard"
 description: "The keyboard component"
 ---
 
-## Description
-
 It's like a virtual keyboard! You can interact with it and then type anything and the computer will be able to read it!
 
 ---
 
 ## Functions
+
+---
 
 ### getLatestKeystroke
 

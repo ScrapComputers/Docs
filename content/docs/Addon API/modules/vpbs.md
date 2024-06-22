@@ -1,5 +1,5 @@
 ---
-title: "sc.vpbs"
+title: "Vpbs"
 description: "The VPBS Module (Computer API)"
 ---
 
@@ -12,7 +12,7 @@ VPBS allows you to convert a lua table to a packet buffer. Use this if you do NO
 ### tostring
 
 ```lua
-sc.VPBS.tostring( data )
+sm.scrapcomputers.VPBS.tostring( data )
 ```
 
 Converts a table to a VPBS string
@@ -28,7 +28,7 @@ Converts a table to a VPBS string
 ### totable
 
 ```lua
-sc.VPBS.totable( data )
+sm.scrapcomputers.VPBS.totable( data )
 ```
 
 Converts a VPBS string to a table
@@ -44,7 +44,7 @@ Converts a VPBS string to a table
 ## isVPBSstring
 
 ```lua
-sc.VPBS.isVPBSstring( data )
+sm.scrapcomputers.VPBS.isVPBSstring( data )
 ```
 
 Returns true if the string is a VPBS-formatted string

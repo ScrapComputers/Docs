@@ -3,9 +3,9 @@ title: "sc.util"
 description: "The utility Module (Computer API)"
 ---
 
-## Description
-
 The utility Module for the computer API!
+
+---
 
 ## Functions
 

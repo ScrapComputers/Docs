@@ -3,9 +3,9 @@ title: "Radar"
 description: "The radar component"
 ---
 
-## Description
-
 The radar allows you to detect objects around you.
+
+---
 
 ## Structure
 
@@ -16,6 +16,8 @@ A target is an object detected from the radar
 #### Fields:
 - `position` [ **[Vec3](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Vec3)** ] The position of the target
 - `surfaceArea` [ **number** ] The total surface area that the radar can see
+
+---
 
 ## Functions
 

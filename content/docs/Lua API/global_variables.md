@@ -3,8 +3,6 @@ title: "Global Variables"
 description: "All functions/variables globally accessible in the computer!"
 ---
 
-## Description
-
 Generally contains functions that were modified to do something different.
 
 ## Functions

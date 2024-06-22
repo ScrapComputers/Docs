@@ -1,9 +1,7 @@
 ---
-title: "sc.base64"
+title: "Base64"
 description: "The Base64 Module (Computer API)"
 ---
-
-## Description
 
 The Base64 Module for the computer API!
 
@@ -14,7 +12,7 @@ The Base64 Module for the computer API!
 ### encode
 
 ```lua
-sc.base64.encode( data )
+sm.scrapcomputers.base64.encode( data )
 ```
 
 Converts a string to be Base64 encoded
@@ -30,7 +28,7 @@ Converts a string to be Base64 encoded
 ### decode
 
 ```lua
-sc.base64.decode( data )
+sm.scrapcomputers.base64.decode( data )
 ```
 
 Decodes a base64 string

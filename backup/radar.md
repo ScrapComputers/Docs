@@ -3,8 +3,6 @@ title: "Radar"
 description: "The radar component"
 ---
 
-## Description
-
 The radar allows you to detect objects around itself.
 
 ## Structures

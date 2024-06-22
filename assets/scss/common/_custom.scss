@@ -1,3 +1,9 @@
+:root
+{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 // CSS for the Colorbar at the header
 .sticky-top .color-bar
 {
@@ -21,17 +27,26 @@
     max-width: none;
 }
 
+// Add padding to home page
 .homepage-section-1
 {
     margin-top: 6rem;
     padding-bottom: 5rem;
 }
 
+// Width is horrible!
 .homepage-section-1 #homepage-section-1-get-started-btn
 {
     width: fit-content;
 }
 
+// Widen the search modeal
+#searchModal div
+{
+    max-width: calc(var(--bs-modal-width) * 2);
+}
+
+// Mobile Support
 @media (max-width: 1900px)
 {
     .homepage-section-1 img

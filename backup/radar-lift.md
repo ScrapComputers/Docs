@@ -3,8 +3,6 @@ title: "RadarLift"
 description: "A lift detected from the radar"
 ---
 
-## Description
-
 A lift detected from the radar
 
 ## Fields

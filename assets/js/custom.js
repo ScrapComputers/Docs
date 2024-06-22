@@ -42,15 +42,6 @@ if (window.location.pathname.startsWith("/docs")) {
     sortList(document.querySelector(".content").querySelector(".docs-links").querySelector("ul"), 0)
 }
 
-// Adds a color bar to the header
-/** @type {HTMLHeadingElement} */
-const navbar = document.querySelector(".navbar")
-const colorBar = document.createElement("div")
-colorBar.className = "color-bar"
-
-navbar.outerHTML = colorBar.outerHTML + navbar.outerHTML
-console.log("[CUSTOM]: Added a colorbar")
-
 // Doks doesn't scroll upwards when you go to a new page without a hash
 // This fixes it
 function onLoop() {
@@ -66,10 +57,9 @@ function onLoop() {
     }
 
     // Check if the scrollY isnt 0. if so then request the next animation frame.
-    if (window.scrollY !== 0)
+    if (document.documentElement.scrollTop != 0 && document.body.scrollTop != 0)
         requestAnimationFrame(onLoop)
 }
-
 
 // Check if its a documentation website and we arent going to direct to a specifc function
 if (!window.location.hash.startsWith("#") && window.location.pathname.startsWith("/docs")) {
@@ -77,21 +67,6 @@ if (!window.location.hash.startsWith("#") && window.location.pathname.startsWith
     console.log("[CUSTOM]: Created window movement to top")
     onLoop()
 }
-
-// Remove the starting "Description on searching"
-const searchModal = document.getElementById("searchModal")
-const searchResults = searchModal.querySelector("#searchResults")
-
-/** @type {HTMLInputElement} */
-const searchQuery = searchModal.querySelector("#query")
-searchQuery.addEventListener("keyup", (ev) => {
-    searchResults.querySelectorAll("article").forEach(searchResult => {
-        const content = searchResult.querySelector(".content")
-        const link = searchResult.querySelector("a")
-
-        console.log(link)
-    })
-})
 
 // Code stolen from color-mode
 const setTheme = function (theme) {
@@ -111,7 +86,6 @@ const getPreferredTheme = () => {
 };
 
 setTheme(getPreferredTheme())
-
 
 // Fix button not having click event
 const buttonColorMode = document.getElementById("buttonColorMode")

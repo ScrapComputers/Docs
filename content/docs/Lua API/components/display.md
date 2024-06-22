@@ -3,8 +3,6 @@ title: "Display"
 description: "The display component"
 ---
 
-## Description
-
 The display is like a monitor but in Scrap Mechanic. Allows you to draw anything on it with a computer.
 
 {{< callout context="caution" title="Performance note!" icon="outline/alert-triangle" >}}
@@ -12,6 +10,8 @@ Displays are the only component where you can cause a ton of lag! Since the only
 
 Using a ton of colors would decrease your game's performance even after optimizations!
 {{< /callout >}}
+
+---
 
 ## Structures
 
@@ -23,6 +23,8 @@ This contains touch data when the user interacts with the display AKA "touches t
 - `x` [ **number** ] The position on the x-axis.
 - `y` [ **number** ] The position on the y-axis.
 - `state` [ **1|2|3** ] The state that it has been pressed. 1 is Pressed, 2 is Hold, 3 is Released.
+
+---
 
 ### PixelTable
 
@@ -43,6 +45,8 @@ Pixel table's arepixel information that would be used to draw on the display. Ki
 ```
 
 This one above draws a singular pixel on coordinates ***(1, 1)***. The scale is also 1x1 so we are just drawing a 1x1 pixel.
+
+---
 
 ## Functions
 

@@ -3,8 +3,6 @@ title: "Motor"
 description: "The motor component"
 ---
 
-## Description
-
 The motor allows you to control what the bearings and pistons should do.
 
 ---

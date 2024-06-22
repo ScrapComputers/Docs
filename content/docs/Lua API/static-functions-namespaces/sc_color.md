@@ -3,8 +3,6 @@ title: "sc.color"
 description: "The Color Module (Computer API)"
 ---
 
-## Description
-
 The Color Module for the computer API!
 
 ---

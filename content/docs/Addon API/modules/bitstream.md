@@ -1,5 +1,5 @@
 ---
-title: "sc.bitstream"
+title: "Bitstream"
 description: "A BitStream Module that lets you make packet data (for example)"
 ---
 
@@ -12,7 +12,7 @@ A BitStream Module that lets you make packet data (for example)
 ### new
 
 ```lua
-sc.bitstream.new( data )
+sm.scrapcomputers.bitstream.new( data )
 ```
 
 Creates a new BitStream Stream
@@ -21,4 +21,4 @@ Creates a new BitStream Stream
 - data [ **string?** ] Pre-appended binary data.
 
 **Returns:**
-- [ **[BitStream.Stream](/docs/lua-api/user-data/bitstream/)** ] The bitstream itself.
+- [ **[BitStream.Stream](/docs/addon-api/user-data/bitstream/)** ] The bitstream itself.

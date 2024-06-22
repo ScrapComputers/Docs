@@ -3,13 +3,13 @@ title: "Laser"
 description: "The laser component"
 ---
 
-## Description
-
 The Laser is like a normal scrap mechanic sensor but instead of ON or OFF, It provides more information which could be useful for things like [Robot kinematics](https://en.wikipedia.org/wiki/Robot_kinematics) (More like **Sensor-Enhanced Kinematics**)
 
 Advanced users: This uses a ray cast for object detection, But this also means that there is an offset between the raycast's starting point and the object itself. it's small but this could cause issues with your math!
 
 ## Structures
+
+---
 
 ### LaserData
 
@@ -26,6 +26,7 @@ This structure contains data that the laser has received
 - `type` [ **string** ] The physics type of the target that was hit. (See [sm.physics.types](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Constants#smphysicsfilter))
 - `valid` [ **boolean** ] Is true if the ray cast was even valid.
 
+---
 
 ## Functions
 

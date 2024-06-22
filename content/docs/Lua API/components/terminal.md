@@ -3,9 +3,9 @@ title: "Terminal"
 description: "The terminal component"
 ---
 
-## Description
-
 The terminal is like a display but more like a console you can write to, Instead of effects, it uses via GUI.
+
+---
 
 ## Functions
 

@@ -3,8 +3,6 @@ title: "RadarShape"
 description: "A shape detected from a radar"
 ---
 
-## Description
-
 A shape detected from a radar.
 
 ---

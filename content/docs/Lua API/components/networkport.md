@@ -3,8 +3,6 @@ title: "Network Port"
 description: "The network port component"
 ---
 
-## Description
-
 The network port allows you to send data to other network ports.
 
 {{< callout context="note" title="Lag Issue" icon="outline/info-circle" >}}

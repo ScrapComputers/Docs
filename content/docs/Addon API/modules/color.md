@@ -1,9 +1,7 @@
 ---
-title: "sc.color"
+title: "Color"
 description: "The Color Module (Computer API)"
 ---
-
-## Description
 
 The Color Module for the computer API!
 
@@ -14,7 +12,7 @@ The Color Module for the computer API!
 ### newSingluar
 
 ```lua
-sc.color.newSingluar( rgbNum )
+sm.scrapcomputers.color.newSingluar( rgbNum )
 ```
 
 Creates a new color from 1 value. Whatever **rgbNum**'s value has will be set on R, G, and B.
@@ -32,7 +30,7 @@ This means it's grayscale only!
 ### random
 
 ```lua
-sc.color.random( from, to )
+sm.scrapcomputers.color.random( from, to )
 ```
 
 Generates a random color from whatever range you want
@@ -49,7 +47,7 @@ Generates a random color from whatever range you want
 ### random0to1
 
 ```lua
-sc.color.random0to1()
+sm.scrapcomputers.color.random0to1()
 ```
 
 Generates a random color from 0 to 1

@@ -3,8 +3,6 @@ title: "sc.json"
 description: "The JSON Module (Computer API)"
 ---
 
-## Description
-
 The JSON Module for the computer API!
 
 ---

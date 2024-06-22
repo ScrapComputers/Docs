@@ -1,18 +1,18 @@
 ---
-title: "sc.util"
+title: "Util"
 description: "The utility Module (Computer API)"
 ---
 
-## Description
-
 The utility Module for the computer API!
+
+---
 
 ## Functions
 
 ### positiveModulo
 
 ```lua
-sc.util.positiveModulo( a, b )
+sm.scrapcomputers.util.positiveModulo( a, b )
 ```
 
 Gets the remainder of the division.
@@ -20,7 +20,7 @@ Gets the remainder of the division.
 {{< callout context="tip" title="Did you know? (Rant warning!)" icon="outline/rocket" >}}
 This is useless and I don't know why you need this. sm.util.positiveModule redirects this function anyway!
 
-Infact sc.util.positiveModulo IS the same as sm.util.positiveModulo. Basicly 1:1!
+Infact sm.scrapcomputers.util.positiveModulo IS the same as sm.util.positiveModulo. Basicly 1:1!
 
 It's not like we reimplemented it. We only have that function so you can't crash the game! Thanks, SM Devs for not adding **1 ERROR CHECK FOR DIVISION BY ZERO ERROR**
 
@@ -32,7 +32,7 @@ Go ahead and take a look at our code for crash prevention:
 ---@param a number The number to divide
 ---@param b number The amount to divide
 ---@return number remainder The remains that it is impossible to divide
-sc.util.postiveModulo = function (a, b)
+sm.scrapcomputers.util.postiveModulo = function (a, b)
     if b == 0 then
         error("Cannot Divide by 0!")
     else

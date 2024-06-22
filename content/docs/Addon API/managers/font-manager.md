@@ -1,9 +1,7 @@
 ---
-title: "sc.fontmanager"
+title: "FontManager"
 description: "The Font manager that allows you to access fonts."
 ---
-
-## Description
 
 The font manager allows you to, of course, manage fonts. You can get font information, get all font names you can use, etc.
 
@@ -39,7 +37,7 @@ This would have been called SCFL (`SCFont Lua` in readable short, `ScrapComputer
 ### getFont
 
 ```lua
-sc.fontmanager.getFont( fontName )
+sm.scrapcomputers.fontmanager.getFont( fontName )
 ```
 
 Gets a font
@@ -56,7 +54,7 @@ Gets a font
 ### getFontNames
 
 ```lua
-sc.fontmanager.getFontNames()
+sm.scrapcomputers.fontmanager.getFontNames()
 ```
 
 Gets all fonts the font manager has access to
@@ -69,7 +67,7 @@ Gets all fonts the font manager has access to
 ### getDefaultFontName
 
 ```lua
-sc.fontmanager.getDefaultFontName()
+sm.scrapcomputers.fontmanager.getDefaultFontName()
 ```
 
 Gets the default font that the font manager uses. This is hard coded so you will require to hook this if you want to modify it.
@@ -82,7 +80,7 @@ Gets the default font that the font manager uses. This is hard coded so you will
 ### getDefaultFont
 
 ```lua
-sc.fontmanager.getDefaultFont()
+sm.scrapcomputers.fontmanager.getDefaultFont()
 ```
 
 Like [getDefaultFontName](#getdefaultfontname) but calls [getFont](#getfont) automaticly.

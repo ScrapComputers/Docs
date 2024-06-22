@@ -3,8 +3,6 @@ title: "RadarHarvestable"
 description: "A harvestable detected from a radar"
 ---
 
-## Description
-
 A harvestable detected from a radar
 
 ---

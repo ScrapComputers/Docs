@@ -3,8 +3,6 @@ title: "sc.math"
 description: "The Math Module (Computer API)"
 ---
 
-## Description
-
 A helper module for your needs that are math-related
 
 ---

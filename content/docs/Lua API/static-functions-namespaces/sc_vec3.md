@@ -3,9 +3,9 @@ title: "sc.vec3"
 description: "The Vector3 Module (Computer API)"
 ---
 
-## Description
-
 The Vector3 Module for the computer API!
+
+---
 
 ## Functions
 

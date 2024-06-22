@@ -3,8 +3,6 @@ title: "sc.fontmanager"
 description: "The Font manager that allows you to access fonts."
 ---
 
-## Description
-
 The font manager allows you to, of course, manage fonts. You can get font information, get all font names you can use, etc.
 
 *The font manager is NOT a module so please do not identify this as a module*

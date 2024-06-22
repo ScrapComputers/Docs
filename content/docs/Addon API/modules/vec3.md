@@ -1,18 +1,18 @@
 ---
-title: "sc.vec3"
+title: "Vec3"
 description: "The Vector3 Module (Computer API)"
 ---
 
-## Description
-
 The Vector3 Module for the computer API!
+
+---
 
 ## Functions
 
 ### add
 
 ```lua
-sc.vec3.add( vec3, x, y, z )
+sm.scrapcomputers.vec3.add( vec3, x, y, z )
 ```
 
 Adds a vec3 by **X, Y and Z**
@@ -31,7 +31,7 @@ Adds a vec3 by **X, Y and Z**
 ### divide
 
 ```lua
-sc.vec3.divide( vec3, x, y, z )
+sm.scrapcomputers.vec3.divide( vec3, x, y, z )
 ```
 
 Divides a vec3 by **X, Y and Z**
@@ -50,7 +50,7 @@ Divides a vec3 by **X, Y and Z**
 ### mulitply
 
 ```lua
-sc.vec3.mulitply( vec3, x, y, z )
+sm.scrapcomputers.vec3.mulitply( vec3, x, y, z )
 ```
 
 Multiplies a vec3 by **X, Y and Z**
@@ -69,7 +69,7 @@ Multiplies a vec3 by **X, Y and Z**
 ### subtract
 
 ```lua
-sc.vec3.subtract( vec3, x, y, z )
+sm.scrapcomputers.vec3.subtract( vec3, x, y, z )
 ```
 
 Subtracts a vec3 by **X, Y and Z**
@@ -88,7 +88,7 @@ Subtracts a vec3 by **X, Y and Z**
 ### distance
 
 ```lua
-sc.vec3.distance( vec1, vec2 )
+sm.scrapcomputers.vec3.distance( vec1, vec2 )
 ```
 
 Calculates the distance between 2 vectors
@@ -107,7 +107,7 @@ Formula: {{< math >}}$\sqrt{(x_2 - x_1) ^ 2 + (y_2 - y_1) ^ 2 + (z_2 - z_1) ^ 2}
 ### newSingluar
 
 ```lua
-sc.vec3.newSingluar( xyz )
+sm.scrapcomputers.vec3.newSingluar( xyz )
 ```
 
 Creates a vector3 by 1 number for xyz

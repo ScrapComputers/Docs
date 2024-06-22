@@ -3,8 +3,6 @@ title: "sc.audio"
 description: "The Audio Module (Computer API)"
 ---
 
-## Description
-
 The Audio Module for the computer API!
 
 ---

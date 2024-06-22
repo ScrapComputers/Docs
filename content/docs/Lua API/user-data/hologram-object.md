@@ -3,9 +3,9 @@ title: "HologramObject"
 description: "An object generated from a hologram"
 ---
 
-## Description
-
 A HologramObject is an object from a hologram. AKA: An object that you're rendering on the hologram.
+
+---
 
 ## Functions
 

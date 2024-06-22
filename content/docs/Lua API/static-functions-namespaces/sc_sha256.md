@@ -3,11 +3,11 @@ title: "sc.sha256"
 description: "The SHA256 Module (Computer API)"
 ---
 
-## Description
-
 The SHA256 Module for the computer API!
 
 *You can only encode. Nothing else...*
+
+---
 
 ## Functions
 

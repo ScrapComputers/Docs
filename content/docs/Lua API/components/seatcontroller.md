@@ -3,9 +3,9 @@ title: "SeatController"
 description: "The SeatController component"
 ---
 
-## Description
-
 This allows you to control seats! Read its WASD data, press some buttons, and cause a war crime against humanity by using seats for networking! (Please don't)
+
+---
 
 ## Structures
 
@@ -18,6 +18,8 @@ Contains data on the seat.
 - `adPower` [ **1|0|-1** ] The power for AD. 1 = Left, 0 = None, -1 = Right
 - `characterName` [ **string?** ] The characters name that is sitting.
 
+---
+
 ### JointData
 
 Contains data of a joint.
@@ -28,6 +30,8 @@ Contains data of a joint.
 - `leftLimit` [ **number** ] The left angle limit.
 - `rightLimit` [ **number** ] The right angle limit.
 - `bearingLock` [ **boolean** ] Whether the joint is unlocked or not.
+
+---
 
 ## Functions
 

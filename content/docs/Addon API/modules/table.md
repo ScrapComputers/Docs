@@ -1,18 +1,18 @@
 ---
-title: "sc.table"
+title: "Table"
 description: "The Table Module (Computer API)"
 ---
 
-## Description
-
 The Table Module for the computer API!
+
+---
 
 ## Functions
 
 ### clone
 
 ```lua
-sc.table.clone( tbl )
+sm.scrapcomputers.table.clone( tbl )
 ```
 
 Clones a table
@@ -31,7 +31,7 @@ Geuss why
 ---Clones a table
 ---@param tbl table The table to clone
 ---@return table clonedTable The cloned table
-sc.table.clone = function (tbl)
+sm.scrapcomputers.table.clone = function (tbl)
     assert(type(tbl) == "table", "Expected table, got "..type(tbl).." instead.") -- Error handling
 
     return unpack({tbl})
@@ -55,7 +55,7 @@ It's too little amount of code! I could do it in different ways but those have d
 ### getItemAt
 
 ```lua
-sc.table.getItemAt( tbl, index )
+sm.scrapcomputers.table.getItemAt( tbl, index )
 ```
 
 Gets an item from a table via the index. Unlike doing `tbl[index]`. This will not care if the index numbers aren't in order.
@@ -68,7 +68,7 @@ local todo = {
  [4825] = "Add 512x512 and 1024x1024 displays for 3x3, 2x2 and 1x1 (Im going to add this no matter what :) )"
 }
 
-local lastTodoGood = sc.table.getItemAt(todo, 3) -- Works! Returns item of the index of 4825. Since it's the 3rd element in the table
+local lastTodoGood = sm.scrapcomputers.table.getItemAt(todo, 3) -- Works! Returns item of the index of 4825. Since it's the 3rd element in the table
 local lastTodoBad = todo[3]                      -- Doesn't Work! Tries grabbing an element at index 3 but that doesn't exist! so this is nil!
 
 print("lastTodoGood: "..tostring(lastTodoGood))
@@ -76,7 +76,7 @@ print("lastTodoBad: " ..tostring(lastTodoBad ))
 
 ```
 
-You see that tbl[index] would error out but not **sc.table.getItemAt**
+You see that tbl[index] would error out but not **sm.scrapcomputers.table.getItemAt**
 
 **Arguments:**
 - tbl [ **table** ] The table
@@ -90,14 +90,14 @@ You see that tbl[index] would error out but not **sc.table.getItemAt**
 ### getTotalItems
 
 ```lua
-sc.table.getTotalItems( tbl )
+sm.scrapcomputers.table.getTotalItems( tbl )
 ```
 
 Gets all items via a **ipairs** loop.
 
 Unlike doing #tbl, If the indexing was weird, #tbl would return 0. This function does not care if the indexing system is weird. Will give you the same result as if the indexing system was normal.
 
-For dictionaries. Use [sc.table.getTotalItemsDict](#gettotalitemsdict)
+For dictionaries. Use [sm.scrapcomputers.table.getTotalItemsDict](#gettotalitemsdict)
 
 **Arguments:**
 - tbl [ **table** ] The table
@@ -110,10 +110,10 @@ For dictionaries. Use [sc.table.getTotalItemsDict](#gettotalitemsdict)
 ### getTotalItemsDict
 
 ```lua
-sc.table.getTotalItemsDict( tbl )
+sm.scrapcomputers.table.getTotalItemsDict( tbl )
 ```
 
-Gets all items via a **pairs** loop. This is used for dictionaries. else use [sc.table.getTotalItems](#gettotalitems)
+Gets all items via a **pairs** loop. This is used for dictionaries. else use [sm.scrapcomputers.table.getTotalItems](#gettotalitems)
 
 Unlike doing #tbl, If the indexing was weird, #tbl would return 0. This function does not care if the indexing system is weird. Will give you the same result as if the indexing system was normal.
 
@@ -125,16 +125,82 @@ Unlike doing #tbl, If the indexing was weird, #tbl would return 0. This function
 
 ---
 
+### isDictonary
+
+```lua
+sm.scrapcomputers.table.isDictonary( tbl )
+```
+
+Returns true if it is a dictionary
+
+**Arguments:**
+- tbl [ **table** ] The table to check
+
+**Returns:**
+- [ **boolean** ] Is true if it's a dictionary.
+
+---
+
+### itemExistsInList
+
+```lua
+sm.scrapcomputers.table.itemExistsInList( tbl, item )
+```
+
+Returns true if an item is found in a list
+
+**Arguments:**
+- tbl [ **table** ] The table to check
+- item [ **any** ] The item to try finding the table. (Cannot be nil!)
+
+**Returns:**
+- [ **boolean** ] If it was found or not.
+
+---
+
+### numberlyOrderTable
+
+```lua
+sm.scrapcomputers.table.numberlyOrderTable( tbl )
+```
+
+Orders the list to be 1 to table size
+
+**Arguments:**
+- tbl [ **table** ] The table to check
+
+**Returns:**
+- [ **table** ] The organized table.
+
+---
+
+### shiftTableIndexes
+
+```lua
+sm.scrapcomputers.table.shiftTableIndexes( tbl, shiftAmount )
+```
+
+Shifts list's indexes.
+
+**Arguments:**
+- tbl [ **table** ] table The table
+- shiftAmount [ **integer** ] integer The amount to shift
+
+**Returns:**
+- [ **table** ] The shifted table
+
+---
+
 ### merge
 
 ```lua
-sc.table.merge( tbl1, tbl2, fullOverwrite )
+sm.scrapcomputers.table.merge( tbl1, tbl2, fullOverwrite )
 ```
 
 Merges 2 tables in 1.
 
 {{< callout context="caution" title="Important!" icon="outline/alert-triangle" >}}
-The order that you put the sc.table.merge matters! ` tbl2 ` will override/overwrite anything inside ` tbl1 `!
+The order that you put the sm.scrapcomputers.table.merge matters! ` tbl2 ` will override/overwrite anything inside ` tbl1 `!
 {{< /callout >}}
 
 **Arguments:**
@@ -150,7 +216,7 @@ The order that you put the sc.table.merge matters! ` tbl2 ` will override/overwr
 ### toString
 
 ```lua
-sc.table.toString( tbl )
+sm.scrapcomputers.table.toString( tbl )
 ```
 
 Converts a table to the same thing but as a string. If you were to try doing this with Lua's tostring. You would just get "table: 00A59928". Not the actual contents of the table itself!
@@ -159,4 +225,4 @@ Converts a table to the same thing but as a string. If you were to try doing thi
 - tbl [ **table** ] The table
 
 **Returns:**
-- [ **string** ] The converted lua table as a string.
+- [ **string** ] The converted lua table is a string.

@@ -3,8 +3,6 @@ title: "RadarBody"
 description: "A body detected from a radar"
 ---
 
-## Description
-
 A body detected from a radar
 
 ---
