@@ -107,7 +107,7 @@ sm.scrapcomputers.filters.dataType = {
 
 ## Functions
 
-### toSring
+### toString
 
 ```lua
 sm.scrapcomputers.toString( value )
