@@ -16,15 +16,15 @@ Advanced users: This uses a ray cast for object detection, But this also means t
 This structure contains data that the laser has received
 
 #### Fields
-- directionWorld [ **[Vec3](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Vec3)** ] The direction vector of the ray cast
-- fraction [ **number** ] The fraction (0-1) of the distance reached until collision divided by the ray's length
-- normalLocal [ **[Vec3](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Vec3)** ] The normal vector of the surface that was hit, relative to the target's rotation.
-- normalWorld [ **[Vec3](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Vec3)** ] The normal vector of the hit surface
-- originWorld [ **[Vec3](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Vec3)** ] The starting world position of the raycast.
-- pointLocal [ **[Vec3](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Vec3)** ] The world position of the point that was hit, relative to the target's position.
-- pointWorld [ **[Vec3](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Vec3)** ] The world position of the point that was hit.
-- type string The physics type of the target that was hit. (See [sm.physics.types](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Constants#smphysicsfilter))
-- valid [ **boolean** ] Is true if the ray cast was even valid.
+- `directionWorld` [ **[Vec3](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Vec3)** ] The direction vector of the ray cast
+- `fraction` [ **number** ] The fraction (0-1) of the distance reached until collision divided by the ray's length
+- `normalLocal` [ **[Vec3](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Vec3)** ] The normal vector of the surface that was hit, relative to the target's rotation.
+- `normalWorld` [ **[Vec3](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Vec3)** ] The normal vector of the hit surface
+- `originWorld` [ **[Vec3](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Vec3)** ] The starting world position of the raycast.
+- `pointLocal` [ **[Vec3](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Vec3)** ] The world position of the point that was hit, relative to the target's position.
+- `pointWorld` [ **[Vec3](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Userdata/Vec3)** ] The world position of the point that was hit.
+- `type` [ **string** ] The physics type of the target that was hit. (See [sm.physics.types](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Constants#smphysicsfilter))
+- `valid` [ **boolean** ] Is true if the ray cast was even valid.
 
 
 ## Functions

@@ -7,6 +7,12 @@ description: "The network port component"
 
 The network port allows you to send data to other network ports.
 
+{{< callout context="note" title="Lag Issue" icon="outline/info-circle" >}}
+We've discovered a lag problem with the network system for this. We use a table to store **received packets** which is all and good until you realize that you can send **MASSIVE** (and I mean like 1/2's of a million) amounts of byte data on a packet. How Lua works in this game, A massive table means lag when removing it.
+
+This is our current theory at the time but at the moment. **Try not to send too much data!**
+{{< /callout >}}
+
 ---
 
 ## Functions

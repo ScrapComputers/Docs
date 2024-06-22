@@ -24,6 +24,19 @@ Sets the bearing(s) speed
 
 ---
 
+### setBearingAngle
+
+```lua
+Motor.setBearingSpeed( angle )
+```
+
+Sets the bearing(s) angle. Set it to nil to turn into an engine, or else (a number) to a controller.
+
+**Arguments:**
+- angle [ **number?** ] The angle to set to bearing(s)
+
+---
+
 ### setPistonSpeed
 
 ```lua

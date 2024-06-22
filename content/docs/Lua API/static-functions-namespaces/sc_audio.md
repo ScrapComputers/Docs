@@ -16,9 +16,9 @@ The Audio Module for the computer API!
 Results for [getParams](#getparams)
 
 #### Fields:
-- default [ **number** ] The default value
-- maximum [ **number** ] The maximum value
-- minimum [ **number** ] The minimum value
+- `default` [ **number** ] The default value
+- `maximum` [ **number** ] The maximum value
+- `minimum` [ **number** ] The minimum value
 
 ---
 
@@ -29,8 +29,8 @@ Result for [areParamsCorrect](#areparamscorrect).
 All issues that the provided parameters have.
 
 #### Fields:
-- hasNoParamsUsableIssue [ **boolean** ] If true. that means there are no usable parameters for this audio
-- issues [ **string[][]** ] A matrix of issues. The 1st array is the parameter's name and the 2nd array is the issues it has for that parameter.
+- `hasNoParamsUsableIssue` [ **boolean** ] If true. that means there are no usable parameters for this audio
+- `issues` [ **string[][]** ] A matrix of issues. The 1st array is the parameter's name and the 2nd array is the issues it has for that parameter.
 
 {{< callout context="note" title="How to check if there are NO issues" icon="outline/info-circle" >}}
 If the issue is empty and hasNoParamsUsableIssue is false. Then there are NO issues!

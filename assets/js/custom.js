@@ -43,6 +43,7 @@ if (window.location.pathname.startsWith("/docs")) {
 }
 
 // Adds a color bar to the header
+/** @type {HTMLHeadingElement} */
 const navbar = document.querySelector(".navbar")
 const colorBar = document.createElement("div")
 colorBar.className = "color-bar"

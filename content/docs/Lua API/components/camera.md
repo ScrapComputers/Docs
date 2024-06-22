@@ -29,7 +29,7 @@ Camera.getFrame( width, height, fovX, fovY, xOffset, yOffset )
 
 Takes a frame (aka a screenshot)
 
-**Arguments:**
+****Arguments:**:**
 - width [ **integer** ] The width of the frame
 - height [ **integer** ] The height of the frame
 - fovX [ **number** ] The FOV on x-axis
@@ -42,15 +42,15 @@ Takes a frame (aka a screenshot)
 
 ---
 
-### getDepthMap
+### getDepthFrame
 
 ```lua
-Camera.getDepthMap( width, height, fovX, fovY, focalLength, xOffset, yOffset )
+Camera.getDepthFrame( width, height, fovX, fovY, focalLength, xOffset, yOffset )
 ```
 
 Takes a depth map frame (aka a screenshot) and returns it
 
-Arguments
+**Arguments:**
 - width [ **integer** ] The width of the frame
 - height [ **integer** ] The height of the frame
 - fovX [ **number** ] The FOV on x-axis
@@ -58,6 +58,33 @@ Arguments
 - focalLength [ **integer** ] The focal's length
 - xOffset [ **integer** ] The applied x offset for the frame. By default, it's at 0 so at the top, it would be rendered there
 - yOffset [ **integer** ] The applied y offset for the frame. By default, it's at 0 so at the left, it would be rendered there
+
+**Returns:**
+- [ **DisplayPixelsTable** ] The pixels of the frame
+
+---
+
+### getMaskedFrame
+
+```lua
+Camera.getMaskedFrame( width, height, fovX, fovY, xOffset, yOffset )
+```
+
+Takes a masked map frame (aka a screenshot) and returns it
+
+**In case `mask` is a `string[]`**: Each string is a raycast result type. If a raycast's type matches the pixel, it will be white or else black.
+**In case `mask` is a `string`**: If a raycast's type matches with the mask, the pixel's color would be white and else black.
+
+If you do not know what the value(s) for the mask should be, (Find them by [clicking this](https://scrapmechanicdocs.com/docs/Game-Script-Environment/Constants#smphysicstypes)) URL.
+
+**Arguments:**
+- width [ **integer** ] The width of the frame
+- height [ **integer** ] The height of the frame
+- fovX [ **number** ] The FOV on x-axis
+- fovY [ **number** ] The FOV on y-axis
+- mask [ **string|string[]** ] The mask for the raycast's to set.
+- xOffset [ **integer** ] The applied x offset for the frame. By default, it's at 0 so at the left, it would be rendered there
+- yOffset [ **integer** ] The applied y offset for the frame. By default, it's at 0 so at the top, it would be rendered there
 
 **Returns:**
 - [ **DisplayPixelsTable** ] The pixels of the frame
@@ -72,14 +99,14 @@ Camera.getVideo( width, height, fovX, fovY, sliceWidth, xOffset, yOffset )
 
 Like getFrame but it's as slices meaning you could make CCTV cameras without lagging a lot! It's just that the refresh rate would be lower.
 
-**Arguments:**
+**Arguments:**:
 - width [ **integer** ] The width of the frame
 - height [ **integer** ] The height of the frame
 - fovX [ **number** ] The FOV on x-axis
 - fovY [ **number** ] The FOV on y-axis
 - sliceWidth [ **integer** ] The width for each slice
-- xOffset [ **integer** ] The applied x offset for the frame. By default, it's at 0 so at the top, it would be rendered there
-- yOffset [ **integer** ] The applied y offset for the frame. By default, it's at 0 so at the left, it would be rendered there
+- xOffset [ **integer** ] The applied x offset for the frame. By default, it's at 0 so at the left, it would be rendered there
+- yOffset [ **integer** ] The applied y offset for the frame. By default, it's at 0 so at the top, it would be rendered there
 
 **Returns:**
 - [ **DisplayPixelsTable** ] The pixels of the frame
@@ -99,13 +126,13 @@ The advanced functions use **CPU-Based Raytracing (Via Raycasting)** to render y
 
 Takes a frame (aka a screenshot)
 
-**Arguments:**
+**Arguments:**:
 - width [ **integer** ] The width of the frame
 - height [ **integer** ] The height of the frame
 - fovX [ **number** ] The FOV on x-axis
 - fovY [ **number** ] The FOV on y-axis
-- xOffset [ **integer** ] The applied x offset for the frame. By default, it's at 0 so at the top, it would be rendered there
-- yOffset [ **integer** ] The applied y offset for the frame. By default, it's at 0 so at the left, it would be rendered there
+- xOffset [ **integer** ] The applied x offset for the frame. By default, it's at 0 so at the left, it would be rendered there
+- yOffset [ **integer** ] The applied y offset for the frame. By default, it's at 0 so at the top, it would be rendered there
 
 **Returns:**
 - [ **[DisplayPixelTable](/docs/lua-api/components/display/#pixeltable)** ] The pixels of the frame
@@ -124,14 +151,14 @@ The advanced functions use **CPU-Based Raytracing (Via Raycasting)** to render y
 
 Like getFrame but it's as slices meaning you could make CCTV cameras without lagging a lot! It's just that the refresh rate would be lower.
 
-**Arguments:**
+**Arguments:**:
 - width [ **integer** ] The width of the frame
 - height [ **integer** ] The height of the frame
 - fovX [ **number** ] The FOV on x-axis
 - fovY [ **number** ] The FOV on y-axis
 - sliceWidth [ **integer** ] The width for each slice
-- xOffset [ **integer** ] The applied x offset for the frame. By default, it's at 0 so at the top, it would be rendered there
-- yOffset [ **integer** ] The applied y offset for the frame. By default, it's at 0 so at the left, it would be rendered there
+- xOffset [ **integer** ] The applied x offset for the frame. By default, it's at 0 so at the left, it would be rendered there
+- yOffset [ **integer** ] The applied y offset for the frame. By default, it's at 0 so at the top, it would be rendered there
 
 **Returns:**
 - [ **DisplayPixelsTable** ] The pixels of the frame
@@ -144,7 +171,7 @@ Camera.toggleRandom( toggle )
 
 Toggles the randomization shader. This is very simple but adds a lot of detail to the frame at a cost of performance when used in displays as the optimization would be gone.
 
-This randomization of the colors of a frame's pixels a tiny bit.
+This randomization of the colors of a frame's pixels is a tiny bit.
 
-**Arguments:**
+**Arguments:**:
 - toggle [ **boolean** ] To enable or disable the randomization shader

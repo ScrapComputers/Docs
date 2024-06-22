@@ -20,9 +20,9 @@ Using a ton of colors would decrease your game's performance even after optimiza
 This contains touch data when the user interacts with the display AKA "touches the display"
 
 #### Fields
-- x [ **number** ] The position on the x-axis.
-- y [ **number** ] The position on the y-axis.
-- state [ **1|2|3** ] The state that it has been pressed. 1 is Pressed, 2 is Hold, 3 is Released.
+- `x` [ **number** ] The position on the x-axis.
+- `y` [ **number** ] The position on the y-axis.
+- `state` [ **1|2|3** ] The state that it has been pressed. 1 is Pressed, 2 is Hold, 3 is Released.
 
 ### PixelTable
 

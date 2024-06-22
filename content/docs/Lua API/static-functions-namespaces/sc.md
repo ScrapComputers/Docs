@@ -153,6 +153,19 @@ Gets all connected lasers from the computer
 
 ---
 
+### getGPSs
+
+```lua
+sc.getGPSs()
+```
+
+Gets all connected GPSs from the computer
+
+**Returns:**
+- [ **[GPS](/docs/lua-api/components/gps/)[]** ] All connected GPSs from the computer
+
+---
+
 ### getSeatControllers
 
 ```lua

@@ -125,6 +125,72 @@ Unlike doing #tbl, If the indexing was weird, #tbl would return 0. This function
 
 ---
 
+### isDictonary
+
+```lua
+sc.table.isDictonary( tbl )
+```
+
+Returns true if it is a dictionary
+
+**Arguments:**
+- tbl [ **table** ] The table to check
+
+**Returns:**
+- [ **boolean** ] Is true if it's a dictionary.
+
+---
+
+### itemExistsInList
+
+```lua
+sc.table.itemExistsInList( tbl, item )
+```
+
+Returns true if an item is found in a list
+
+**Arguments:**
+- tbl [ **table** ] The table to check
+- item [ **any** ] The item to try finding the table. (Cannot be nil!)
+
+**Returns:**
+- [ **boolean** ] If it was found or not.
+
+---
+
+### numberlyOrderTable
+
+```lua
+sc.table.numberlyOrderTable( tbl )
+```
+
+Orders the list to be 1 to table size
+
+**Arguments:**
+- tbl [ **table** ] The table to check
+
+**Returns:**
+- [ **table** ] The organized table.
+
+---
+
+### shiftTableIndexes
+
+```lua
+sc.table.shiftTableIndexes( tbl, shiftAmount )
+```
+
+Shifts list's indexes.
+
+**Arguments:**
+- tbl [ **table** ] table The table
+- shiftAmount [ **integer** ] integer The amount to shift
+
+**Returns:**
+- [ **table** ] The shifted table
+
+---
+
 ### merge
 
 ```lua
@@ -159,4 +225,4 @@ Converts a table to the same thing but as a string. If you were to try doing thi
 - tbl [ **table** ] The table
 
 **Returns:**
-- [ **string** ] The converted lua table as a string.
+- [ **string** ] The converted lua table is a string.

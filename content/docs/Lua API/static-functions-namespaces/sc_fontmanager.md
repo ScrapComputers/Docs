@@ -26,11 +26,11 @@ This would have been called SCFL (`SCFont Lua` in readable short, `ScrapComputer
 {{< /callout >}}
 
 #### Fields:
-- fontWidth [ **integer** ] The width of the font
-- fontHeight [ **integer** ] The height of the font
-- characters [ **string** ] All characters used on the font
-- errorChar [ **string[]** ] The error character font
-- charset [ **string[][]** ] All character's gylphs. On the first array. The index is the character! The second is the row number!
+- `fontWidth` [ **integer** ] The width of the font
+- `fontHeight` [ **integer** ] The height of the font
+- `characters` [ **string** ] All characters used on the font
+- `errorChar` [ **string[]** ] The error character font
+- `charset` [ **string[][]** ] All character's gylphs. On the first array. The index is the character! The second is the row number!
 
 ---
 
