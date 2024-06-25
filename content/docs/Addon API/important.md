@@ -60,7 +60,6 @@ To know what would happen. This table will provide info about it
 | Ban Evasion                | You attempt to evade our bans                                                    | 4 (Game Crash)      | No         | Yes        |
 | Bad Documentation          | Your add-on is not easy to understand what something does.                       | 1 (Popup once)      | Yes        | No         |
 | Ban-System Not Implemented | There are 1 or more interactables that don't have the added code for the ban system. | 3 (Mod Disabled)    | Yes        | No         |
-| Horrible Add-on Quality    | Your add-on is not good, poorly made, or/and useless                       | 2 (Popup every 30s) | Yes        | No         |
 
 if you violate one of the above and you are `Dev Banned` (So the Dev Banned category is a `Yes` or depends on where we mention that you are one), You can no longer make
 any add-ons and your current add-ons would be affected. All of your add-ons would be banned under the same ban as Severity **4 (Game Crash)**. This WILL be permanent!
