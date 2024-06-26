@@ -3,7 +3,7 @@ title: "Bugfix Update: Removing a bugfix to fix a bug!"
 contributors: ["VeraDev"]
 summary: "We just unimplemented a bugfix as our bugfix. That is not even a joke."
 date: 2024-06-25T16:30:02+0200
-categories: ["Updates"]
+categories: ["Updates", "Bugfix/Hotfix"]
 ---
 
 You might be wondering, "Did we just undo a bugfix to solve a problem?" Yes, that’s precisely what happened! In our latest update for ScrapComputers, we had to remove a previous bugfix and essentially reintroduce a bug to address an even more significant issue. Let's dive into the details.
@@ -27,6 +27,6 @@ While it might sound counterintuitive to reintroduce a bug, this step was necess
 
 # Fresh New Bug Discovery!
 
-During our testing and community feedback, we discovered a new bug. One of our community members, The Red Builder, encountered an issue while working on a project with ScrapComputers. He set self.cl to an empty table in an unsafe environment, which caused significant problems. ScrapComputers uses self.cl for client-side variables, so when he did that, it effectively wiped out his entire computer setup, resulting in errors like "unable to find self.sv," which is not typical behavior.
+During our testing and community feedback, we discovered a new bug. One of our community members, The Red Builder, encountered an issue while working on a project with ScrapComputers. When setting `self.cl` to an empty table in an unsafe environment, it caused significant problems. ScrapComputers uses self.cl for client-side variables, so when he did that, it effectively wiped out his entire computer setup, resulting in errors like `unable to find self.sv`, which is not typical behavior.
 
-We are planning to fix this issue soon. In the meantime, we recommend avoiding setting self.sv or self.cl in the computer when in an unsafe environment.
+We are planning to fix this issue soon. In the meantime, we recommend avoiding setting `self.sv` or `self.cl` in the computer when in an unsafe environment.
